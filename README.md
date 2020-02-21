@@ -37,10 +37,10 @@ func main() {
 		log.Fatal(err)
 	}
 	imageFile, err := os.Open(sheet.Meta.Image)
-	defer imageFile.Close()
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer imageFile.Close()
 	img, _, err := image.Decode(imageFile)
 	sheetImage, ok := img.(image.RGBA)
 	if !ok {
