@@ -19,7 +19,7 @@ Create a sprite sheet with TexturePacker and and save it in "JSON (Hash)" format
 
 ![TexturePacker format selection dialog](doc/jsonhashformat.png?raw=true "TexturePacker format selection dialog")
 
-```
+```go
 package main
 
 import (
