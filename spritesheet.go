@@ -9,7 +9,7 @@ package texturepacker
 import (
 	"fmt"
 	"image"
-	"io/ioutil"
+	"os"
 )
 
 // A SpriteSheet is a collection of sprites packed into a single image.
@@ -49,7 +49,7 @@ type Metadata struct {
 // SheetFromFile loads and parses sprite sheet information from a file with the
 // specified format.
 func SheetFromFile(path string, f Format) (*SpriteSheet, error) {
-	data, err := ioutil.ReadFile(path)
+	data, err := os.ReadFile(path)
 	if err != nil {
 		return nil, fmt.Errorf("could not read sprite sheet file: %w", err)
 	}
