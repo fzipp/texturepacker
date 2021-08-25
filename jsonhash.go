@@ -107,7 +107,7 @@ func toPoint(s intSizeJSON) image.Point {
 }
 
 func toVec2(p floatPointJSON) FloatPoint {
-	return FloatPoint{X: p.X, Y: p.Y}
+	return FloatPoint(p)
 }
 
 func toMetadata(meta *metadataJSON) *Metadata {
