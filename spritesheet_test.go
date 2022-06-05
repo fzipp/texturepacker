@@ -34,7 +34,7 @@ func TestSheetFromFile(t *testing.T) {
 			},
 		},
 		Meta: &Metadata{
-			App:         "http://www.codeandweb.com/texturepacker",
+			App:         "https://www.codeandweb.com/texturepacker",
 			Version:     "1.0",
 			Image:       "TestSheet.png",
 			Format:      "RGBA8888",
